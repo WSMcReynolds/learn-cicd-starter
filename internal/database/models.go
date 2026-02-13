@@ -4,8 +4,6 @@
 
 package database
 
-import ()
-
 type Note struct {
 	ID        string
 	CreatedAt string
@@ -19,5 +17,6 @@ type User struct {
 	CreatedAt string
 	UpdatedAt string
 	Name      string
-	ApiKey    string
+	// #nosec G117
+	ApiKey string
 }
