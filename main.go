@@ -93,7 +93,7 @@ func main() {
 	srv := &http.Server{
 		Addr:              ":" + port,
 		Handler:           router,
-		ReadHeaderTimeout: time.Duration(1000),
+		ReadHeaderTimeout: time.Duration(1 * time.Second),
 	}
 
 	log.Printf("Server Started Successfully...")
